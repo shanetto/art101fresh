@@ -1,0 +1,35 @@
+.test-div {
+    color: purple;
+    padding: 20px;
+    margin: 20px;
+    background: palegreen;
+}
+
+.test-div h2 {
+    color: plum;
+}
+
+.test-div:hover {
+    color: aquamarine
+}
+
+.divs h2 {
+    color: yellow;
+}
+
+.special {
+    background: green;
+}
+
+.special button {
+    background: blue;
+}
+
+h2 {
+    color: orange;
+}
+
+#house {
+    display: flex;
+    flex-direction: row;
+}

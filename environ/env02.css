@@ -1,0 +1,28 @@
+BODY {
+    background-image: url("i2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+P, H1, H2, H3 {color: #711184; font-family: sans-serif;}
+H1 {background-color: darkcyan;}
+H2 {background-color: darkgray;}
+P {background-color: darkgoldenrod;}
+
+
+.scene {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.scene img {
+    width: 200px;
+    height: auto;
+}
+
+.jorm img {
+    width: 500px;
+    height: auto;
+}
