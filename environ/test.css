@@ -1,0 +1,35 @@
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left column */
+.left {
+  flex: 1;
+  overflow-y: auto; /* makes it scrollable */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Right column */
+.right {
+  width: 40%; /* or any fixed width */
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh; /* stay full height */
+  padding: 1rem;
+  background: #f8f8f8;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Optional to prevent overlap */
+.left {
+  margin-right: 40%; /* same as .right width */
+}
