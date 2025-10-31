@@ -45,7 +45,6 @@ $("#needy-button").click(function () {
 
    makeImage("Coral"); 
    makeImage("Orchid"); 
-   makeImage("HotPink");
    makeImage("Plum"); 
 
 
