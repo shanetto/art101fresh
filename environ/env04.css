@@ -1,6 +1,8 @@
 body {
   text-align: center;
   margin-top: 50px;
+  font-family: Arial, sans-serif;
+  transition: background-color 1s ease;
 }
 
 #clock {
@@ -15,5 +17,22 @@ body {
   background-position: center;
   border-radius: 50%;
   margin: 0 auto 20px auto;
-  transition: background-image 0.5s ease;
+  transition: background-image 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#nextHour {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#nextHour:hover {
+  background-color: #45a049;
 }

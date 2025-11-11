@@ -25,9 +25,9 @@ $("#output").append(normStats);
 $("#output").append(jormStats);
 $("#envinf").append(environmentspiel);
 
-// 🌀 Function to change environment based on wave mood
+
 function changeEnvironment(waveMood, populationChange, newLocation) {
-    // Update environment data
+
     if (waveMood) environmentInfo.waves = waveMood;
     if (newLocation) environmentInfo.location = newLocation;
     if (populationChange) environmentInfo.population += populationChange;
@@ -59,15 +59,15 @@ function changeEnvironment(waveMood, populationChange, newLocation) {
         $("h1").text("You can hear the waves crashing... but not with earth...");
     }
 
-    // Update text about the environment
+
     let updatedSpiel = "<p>This place is in: " + environmentInfo.location + ", has a population of " + environmentInfo.population + ", inhabited by " + environmentInfo.residents[0] + " and " + environmentInfo.residents[1] + ", and the waves are " + environmentInfo.waves + ".</p>";
     $("#envinf").html(updatedSpiel);
 }
 
-// 🧭 Button trigger
+
 $(document).ready(function () {
     $("#changeBtn").on("click", function () {
-        // Randomly choose a new wave mood for fun
+
         let moods = ["calm", "stormy", "chaotic"];
         let randomMood = moods[Math.floor(Math.random() * moods.length)];
         changeEnvironment(randomMood, 1, "The shifting sea");
