@@ -80,7 +80,15 @@ $nextHourButton.on('click', function() {
   hour = (hour + 1) % 24;
   updateClock();
   updatePhase();
+  $nextHourButton.text("Click Me");
 });
+$nextHourButton.on('dblclick', function() {
+  hour = (hour + 4) % 24;
+  updateClock();
+  updatePhase();
+  $nextHourButton.text("Double Click!");
+});
+
 
 
 updateClock();
