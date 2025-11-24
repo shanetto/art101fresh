@@ -144,12 +144,12 @@ $(document).ready(function () {
     $("#output").append(renderJorm());
     $("#envinf").append(renderEnvironment());
 
-
-    $("#changeBtn").on("click", () => {
+    $("#changeBtn").on("click", function () {
         spawnPerson();
 
         const moods = [
-            "angry", "happy", "sad", "annoyed", "ecstatic", "melancholy", "furious", "content", "joyful",
+            "angry", "happy", "sad", "annoyed", "ecstatic",
+            "melancholy", "furious", "content", "joyful",
         ];
         const randomMood = moods[Math.floor(Math.random() * moods.length)];
 
